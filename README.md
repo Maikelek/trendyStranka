@@ -1,0 +1,2 @@
+# trendyStranka
+Trendy Zadanie
