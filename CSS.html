@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <head>
+        <title>Bitcoin</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Web development">
+        <meta name="author" content="Marián Zelinka, Slavomír Salončuk">
+        <link rel="stylesheet" href="cssMaikelek.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
+
+    </head>
+
+    <body>
+
+        <div class="sidenav">
+            <a id="uvod" href="index.html">Úvod</a>
+            <a id="onas" href="team.html">O nás</a>
+            <a style="cursor: pointer" onclick="vyskoc()" id="menu">Témy ≡</a>
+            <a style="visibility: hidden" id="vec1" href="HTML.html">- HTML</a>
+            <a style="visibility: hidden" id="vec2" href="Javascript.html">- Js</a>
+            <a href="https://www.spseke.sk/skola/" id="logo" target="_blank"><img src="logo_spse.png" alt="spsekelogo"></a>
+
+        </div>
+
+        <div class="main">
+            <h1 class="nadpis-hlavny">CSS</h1><br>
+            <p class="p1">
+                <strong class="p1">CSS</strong> Kaskádové štýly alebo CSS (skratka z angl. Cascading Style Sheets) je všeobecné rozšírenie (X)HTML. Konzorcium W3C označuje CSS ako jednoduchý mechanizmus na vizuálne formátovanie internetových dokumentov.
+                Štýly umožnili oddeliť štruktúru HTML alebo XHTML od vzhľadu.<br>
+                <br> Viem, že to zatiaľ nikomu nič nehovorí, preto si vysvetlíme základy <strong>CSS</strong>. Ako už vieme <b>html</b> robí štruktúru stránky, <b>CSS</b> upravuje výzor danej štruktúri, vysvetlíme si ako to funguje na 3 základnych funkciách,
+                ktoré sa riadia podľa toho čo chcete upravovať.Tieto 3 základné si ukážeme
+                <br>
+                <ul class="p1">
+                    <li>Class-y</li>
+                    <li>ID</li>
+                    <li>Celé tagy</li>
+                </ul>
+            </p>
+            <h2 class="nadpis">Class-y</h2>
+            <p class="p1">
+                S classami vieme označiť viac vecí a zápis v css musí mať bodku a potom názov class-y
+                <br>
+                <center><img class="img" src="https://cdn.discordapp.com/attachments/763061444496588830/768136619441913926/text_2.png"></center><br>
+                <br>
+            </p>
+            <h2 align="left" class="nadpis">Celé tagy</h2>
+            <p align="left" class="p1">
+                Celé tagy hovoria samé za seba, pri použítí tohto príkazu sa zmenia všetky tak tie isté tagy na to čo ste im určili a robí sa to tak isto a class-y len tam <strong>NESMIETE</strong> dať bodku. Pre príklad si ukážeme ako zmeniť všetkým
+                paragrafom farbu, veľkosť a pozíciu
+                <br>
+                <center><img class="img" src="https://cdn.discordapp.com/attachments/763061444496588830/768136598406561792/text.png"></center>
+            </p>
+            <div>
+                <h2 align="left" class="nadpis">ID</h2>
+                <p align="left" class="p1">
+                    ID je skoro to isté ako class, jediný rozdiel je že class je schopné vziať viac elementov a id iba jeden. Jeho zápis je s #.
+                    <br>
+                    <center><img class="img" src="https://cdn.discordapp.com/attachments/763061444496588830/763102051365814282/unknown.png"></center>
+            </div>
+
+    </body>
+    <script>
+        let vec1 = document.getElementById("vec1");
+        let vec2 = document.getElementById("vec2");
+        let menu = document.getElementById("menu")
+
+        function vyskoc() {
+            if (vec1.style.visibility && vec2.style.visibility == "hidden") {
+                vec1.style.visibility = "visible";
+                vec2.style.visibility = "visible";
+                menu.style.color = "#F90606";
+                menu.style.textShadow = "2.5px 2.5px #000000"
+
+            } else {
+                vec1.style.visibility = "hidden";
+                vec2.style.visibility = "hidden";
+                menu.style.color = "#FFFFFF";
+                menu.style.textShadow = "0px 0px #000000"
+            }
+        }
+    </script>
+
+</html>

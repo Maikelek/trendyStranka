@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <head>
+        <title>HTML</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Web development">
+        <meta name="author" content="Marián Zelinka, Slavomír Salončuk">
+        <link rel="stylesheet" href="cssMaikelek.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
+
+    </head>
+
+    <body>
+
+        <div class="sidenav">
+            <a id="uvod" href="index.html">Úvod</a>
+            <a id="onas" href="team.html">O nás</a>
+            <a style="cursor: pointer" onclick="vyskoc()" id="menu">Témy ≡</a>
+            <a style="visibility: hidden" id="vec1" href="Javascript.html">- Js</a>
+            <a style="visibility: hidden" id="vec2" href="CSS.html">- CSS</a>
+            <a href="https://www.spseke.sk/skola/" id="logo" target="_blank"><img src="logo_spse.png" alt="spsekelogo"></a>
+
+        </div>
+
+        <div class="main">
+            <h1 class="nadpis-hlavny">HTML</h1><br>
+            <p class="p1"><strong class="nadpis">HyperText Markup Language </strong>je značkovací jazyk určený na vytváranie webových stránok a iných informácií zobraziteľných vo webovom prehliadači. HTML kladie dôraz skôr na prezentáciu informácií (odseky, fonty,
+                váha písma, tabuľky atď.) ako na sémantiku (význam slov).</p>
+            <ul class="p1">
+                <li>Jazyk HTML umožňuje vytvárať dokumenty obsahujúce text, hypertextové odkazy, multimediálny a iný obsah, formuláre, skripty</li>
+                <li>Jazyk HTML je textový; umožňuje čítanie a upravovanie priamo v textovom editore.</li>
+                <li>Jazyk HTML sa zvykne používať aj v elektronickej pošte</li>
+            </ul> <br>
+            <p class="p1">HTML má 4 druhy prvkov:</p>
+            <ul class="p1">
+                <li><strong style="color: #be3144;">Štruktúrové </strong>- Označujú zmysel textu</li>
+                <li><strong style="color: #be3144;">Prezentačné </strong>- Popisujú výzor textu, bez ohľadu na jeho zmysel</li>
+                <li><strong style="color: #be3144;">Hyperlinky </strong>- Linky do iných dokumentov</li>
+                <li><strong style="color: #be3144;">Ovládacie </strong>- Vytvárajú tlačidlá, zaškrtávacie políčka, zoznamy, atď</li>
+            </ul> <br>
+            <h3 class="nadpis">Ako začať s HTML?</h3>
+            <p class="p1"> Na HTML nepotrebujeme nič špeciálne stačí nám obyčajný textový editor, keďže HTML je štandardom má ho každý PC i keď vždy je lepšie používať špeciálne editory na to určené. Ďalšou z vecí akú potrebujeme a aj tú má každý počítač je webový prehliadač.
+                Ak tieto požiadavky spĺňate tak môžeme pokračovať.
+            </p> <br>
+            <h3 class="nadpis">Ako vyzerá HTML</h3>
+            <p class="p1">
+                Celý jazyk HTML je zložený z tzv. tagov (nazývaných aj značiek), ktoré určujú zobrazenie jednotlivých elementov na stránke.
+                <br> Tagy sa píšu v lomených zátvorkách
+                <> a rozlišujeme párové a nepárové; párové tagy majú úvodnú a koncovú značku. Medzi úvodným a koncovým tagom sa nachádza text alebo ďalšie HTML tagy, ktoré sa na vašej stránke zobrazia podľa príslušných pokynov. Nepárové tagy majú len úvodnú
+                    značku, nijako sa ukončiť nemusia. Vyzerá nasledovne <strong style="color: #be3144;">&lt;nazovZnačky&gt;Obsah&lt;/nazovZnačky&gt;</strong> <br>
+            </p>
+            <h3 class="nadpis">Kostra HTML vyzerá takto:</h3>
+            <center><img src="https://cdn.discordapp.com/attachments/943853451694194779/964235309875347486/unknown.png" alt="kostra html"></center>
+            <script>
+                let vec1 = document.getElementById("vec1");
+                let vec2 = document.getElementById("vec2");
+                let menu = document.getElementById("menu")
+
+                function vyskoc() {
+                    if (vec1.style.visibility && vec2.style.visibility == "hidden") {
+                        vec1.style.visibility = "visible";
+                        vec2.style.visibility = "visible";
+                        menu.style.color = "#F90606";
+                        menu.style.textShadow = "2.5px 2.5px #000000"
+
+                    } else {
+                        vec1.style.visibility = "hidden";
+                        vec2.style.visibility = "hidden";
+                        menu.style.color = "#FFFFFF";
+                        menu.style.textShadow = "0px 0px #000000"
+                    }
+                }
+            </script>
+
+</html>
