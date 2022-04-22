@@ -26,8 +26,6 @@ body {
 .fotka {
     width: 700px;
     height: 500px;
-    position: absolute;
-    right: 5%;
     border-style: solid;
     border-width: 10px;
     border-color: #be3144;
