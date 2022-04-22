@@ -13,7 +13,7 @@
 #
 
 ## Stránky Zmeny
-| Pôvodný názov       | Nový názov           | Kto        |
+| Pôvodný názov       | Nový názov           | Mená       |
 | -------------       |:-------------:       | -----:     |
 | CSS.html            | historia.html        | Maikelek   |
 | HTML.html           | sifrovanie.html      | Slavissimo |
