@@ -23,5 +23,3 @@
 #
 #
 #
-
-## Bug 1  - Apache rozhadzuje logo školy v témach 
