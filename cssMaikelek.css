@@ -26,9 +26,18 @@ body {
 .fotka {
     width: 700px;
     height: 500px;
+    position: absolute;
+    right: 5%;
     border-style: solid;
     border-width: 10px;
     border-color: #be3144;
+}
+
+.fotkaMala {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 17%;
 }
 
 .sidenav a:hover {
