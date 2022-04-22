@@ -15,7 +15,7 @@
 ## Stránky Zmeny
 | Pôvodný názov       | Nový názov           | Mená       |
 | -------------       |:-------------:       | -----:     |
-| CSS.html            | historia.html        | Maikelek   |
+| CSS.html            | historia.html        | Maikelek   | 
 | HTML.html           | sifrovanie.html      | Slavissimo |
 | Javascript.html     | bitcoin.html         | Slavissimo |
 | X                   | nft.html             | Maikelek   |

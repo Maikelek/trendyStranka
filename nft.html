@@ -4,9 +4,9 @@
 <head>
 
     <head>
-        <title>Javascript</title>
+        <title>NFT</title>
         <meta charset="UTF-8">
-        <meta name="keywords" content="Web development">
+        <meta name="keywords" content="Crypto mena">
         <meta name="author" content="Marián Zelinka, Slavomír Salončuk">
         <link rel="stylesheet" href="cssMaikelek.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
@@ -21,8 +21,9 @@
             <a id="uvod" href="index.html">Úvod</a>
             <a id="onas" href="team.html">O nás</a>
             <a style="cursor: pointer" onclick="vyskoc()" id="menu">Témy ≡</a>
-            <a style="visibility: hidden" id="vec1" href="HTML.html">- HTML</a>
-            <a style="visibility: hidden" id="vec2" href="CSS.html">- CSS</a>
+            <a style="visibility: hidden" id="vec1" href="historia.html">- História</a>
+            <a style="visibility: hidden" id="vec2" href="sifrovanie.html">- Šifrovanie</a>
+            <a style="visibility: hidden" id="vec3" href="bitcoin.html">- Bitcoin</a>
             <a href="https://www.spseke.sk/skola/" id="logo" target="_blank"><img src="logo_spse.png" alt="spsekelogo"></a>
 
         </div>
@@ -70,97 +71,25 @@
     <script>
         let vec1 = document.getElementById("vec1");
         let vec2 = document.getElementById("vec2");
+        let vec3 = document.getElementById("vec3");
         let menu = document.getElementById("menu")
 
         function vyskoc() {
-            if (vec1.style.visibility && vec2.style.visibility == "hidden") {
+            if (vec1.style.visibility, vec2.style.visibility, vec3.style.visibility == "hidden") {
                 vec1.style.visibility = "visible";
                 vec2.style.visibility = "visible";
-                menu.style.color = "#FF0000";
+                vec3.style.visibility = "visible";
+                menu.style.color = "#F90606";
                 menu.style.textShadow = "2.5px 2.5px #000000"
 
             } else {
                 vec1.style.visibility = "hidden";
                 vec2.style.visibility = "hidden";
+                vec3.style.visibility = "hidden";
                 menu.style.color = "#FFFFFF";
                 menu.style.textShadow = "0px 0px #000000"
             }
         }
-
-        //Blackjack hra
-
-        let hrac = {
-            meno: "Vy",
-            body: 0
-        }
-
-        let karty = []
-        let suma = 0
-        let maBlackJack = false
-        let zije = false
-        let sprava = ""
-        let spravaID = document.getElementById("spravaID")
-        let sumaID = document.getElementById("sumaID")
-        let kartyID = document.getElementById("kartyID")
-        let hracID = document.getElementById("hracID")
-
-        function nahodnaKarta() {
-            let nahodneCislo = Math.floor(Math.random() * 13) + 1
-            if (nahodneCislo > 10) {
-                return 10
-            } else if (nahodneCislo === 1) {
-                return 11
-            } else {
-                return nahodneCislo
-            }
-        }
-
-        function zacatHru() {
-            zije = true
-            let prvaKarta = nahodnaKarta()
-            let druhaKarta = nahodnaKarta()
-            karty = [prvaKarta, druhaKarta]
-            suma = prvaKarta + druhaKarta
-            hrac.body = 0
-            hracID.textContent = hrac.meno + ": " + hrac.body
-            nacitajHru()
-        }
-
-        function nacitajHru() {
-
-            kartyID.textContent = "karty: "
-            for (let i = 0; i < karty.length; i++) {
-                kartyID.textContent += karty[i] + " "
-            }
-            sumaID.textContent = "suma: " + suma
-            if (suma <= 20) {
-                sprava = "Potiahni dalsiu kartu"
-                hrac.meno = osoba,
-                    hracID.textContent = hrac.meno + ": " + hrac.body
-            } else if (suma === 21) {
-                sprava = "Blackjack !!!"
-                maBlackJack = true
-                hrac.body += 500
-                hracID.textContent = hrac.meno + ": " + hrac.body
-            } else {
-                sprava = "Prehral si!"
-                zije = false
-                hrac.body += -250
-                hracID.textContent = hrac.meno + ": " + hrac.body
-            }
-            spravaID.textContent = sprava
-        }
-
-
-        function novaKarta() {
-            if (zije === true && maBlackJack === false) {
-                let karta = nahodnaKarta()
-                suma += karta
-                karty.push(karta)
-                nacitajHru()
-            }
-        }
-        //konec Blackjacku
     </script>
 
 </html>

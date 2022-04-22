@@ -4,9 +4,9 @@
 <head>
 
     <head>
-        <title>HTML</title>
+        <title>Šifrovanie</title>
         <meta charset="UTF-8">
-        <meta name="keywords" content="Web development">
+        <meta name="keywords" content="Crypto mena">
         <meta name="author" content="Marián Zelinka, Slavomír Salončuk">
         <link rel="stylesheet" href="cssMaikelek.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
@@ -21,8 +21,9 @@
             <a id="uvod" href="index.html">Úvod</a>
             <a id="onas" href="team.html">O nás</a>
             <a style="cursor: pointer" onclick="vyskoc()" id="menu">Témy ≡</a>
-            <a style="visibility: hidden" id="vec1" href="Javascript.html">- Js</a>
-            <a style="visibility: hidden" id="vec2" href="CSS.html">- CSS</a>
+            <a style="visibility: hidden" id="vec1" href="historia.html">- História</a>
+            <a style="visibility: hidden" id="vec2" href="bitcoin.html">- Šifrovanie</a>
+            <a style="visibility: hidden" id="vec3" href="nft.html">- NFT</a>
             <a href="https://www.spseke.sk/skola/" id="logo" target="_blank"><img src="logo_spse.png" alt="spsekelogo"></a>
 
         </div>
@@ -50,27 +51,29 @@
             <h3 class="nadpis">Ako vyzerá HTML</h3>
             <p class="p1">
                 Celý jazyk HTML je zložený z tzv. tagov (nazývaných aj značiek), ktoré určujú zobrazenie jednotlivých elementov na stránke.
-                <br> Tagy sa píšu v lomených zátvorkách
-                <> a rozlišujeme párové a nepárové; párové tagy majú úvodnú a koncovú značku. Medzi úvodným a koncovým tagom sa nachádza text alebo ďalšie HTML tagy, ktoré sa na vašej stránke zobrazia podľa príslušných pokynov. Nepárové tagy majú len úvodnú
-                    značku, nijako sa ukončiť nemusia. Vyzerá nasledovne <strong style="color: #be3144;">&lt;nazovZnačky&gt;Obsah&lt;/nazovZnačky&gt;</strong> <br>
+                <br> Tagy sa píšu v lomených zátvorkách &lt;&gt; a rozlišujeme párové a nepárové; párové tagy majú úvodnú a koncovú značku. Medzi úvodným a koncovým tagom sa nachádza text alebo ďalšie HTML tagy, ktoré sa na vašej stránke zobrazia podľa
+                príslušných pokynov. Nepárové tagy majú len úvodnú značku, nijako sa ukončiť nemusia. Vyzerá nasledovne <strong style="color: #be3144;">&lt;nazovZnačky&gt;Obsah&lt;/nazovZnačky&gt;</strong> <br>
             </p>
             <h3 class="nadpis">Kostra HTML vyzerá takto:</h3>
             <center><img src="https://cdn.discordapp.com/attachments/943853451694194779/964235309875347486/unknown.png" alt="kostra html"></center>
             <script>
                 let vec1 = document.getElementById("vec1");
                 let vec2 = document.getElementById("vec2");
+                let vec3 = document.getElementById("vec3");
                 let menu = document.getElementById("menu")
 
                 function vyskoc() {
-                    if (vec1.style.visibility && vec2.style.visibility == "hidden") {
+                    if (vec1.style.visibility, vec2.style.visibility, vec3.style.visibility == "hidden") {
                         vec1.style.visibility = "visible";
                         vec2.style.visibility = "visible";
+                        vec3.style.visibility = "visible";
                         menu.style.color = "#F90606";
                         menu.style.textShadow = "2.5px 2.5px #000000"
 
                     } else {
                         vec1.style.visibility = "hidden";
                         vec2.style.visibility = "hidden";
+                        vec3.style.visibility = "hidden";
                         menu.style.color = "#FFFFFF";
                         menu.style.textShadow = "0px 0px #000000"
                     }
