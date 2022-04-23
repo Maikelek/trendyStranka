@@ -3,8 +3,8 @@
 
 ## ToDO list
 * Názvy súborov na suhlasiace ✔
-* Spísať texty na stránky 
-* Zmeniť fotky na úvodnej stránke
+* Spísať texty na stránky 1/2 ✔ 
+* Zmeniť fotky na úvodnej stránke ✔ 
 * Pridať 5 scriptíkov milých
 * Databáza
 
