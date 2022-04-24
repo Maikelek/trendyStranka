@@ -5,7 +5,7 @@
 * Názvy súborov na suhlasiace ✔
 * Spísať texty na stránky 1/2 ✔ 
 * Zmeniť fotky na úvodnej stránke ✔ 
-* Pridať 5 scriptíkov milých
+* Pridať 5 scriptíkov/animacii milých ✔
 * Databáza
 
 #

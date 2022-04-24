@@ -13,6 +13,11 @@ body {
     background-color: #be3144;
     overflow-x: hidden;
     padding-top: 20px;
+    transition: 0.5s;
+}
+
+.sidenav:hover {
+    background-color: #1583b6;
 }
 
 .sidenav a {
@@ -23,6 +28,11 @@ body {
     display: block;
 }
 
+.sidenav a:hover {
+    font-size: 30px;
+    text-shadow: 2.5px 2.5px rgb(2, 2, 2);
+}
+
 .fotka {
     width: 700px;
     height: 500px;
@@ -31,9 +41,9 @@ body {
     border-color: #be3144;
 }
 
-.sidenav a:hover {
-    font-size: 30px;
-    text-shadow: 2.5px 2.5px rgb(2, 2, 2);
+#maleFoto {
+    width: 100px;
+    height: 100px;
 }
 
 .p1 {
@@ -43,8 +53,15 @@ body {
 
 #logo {
     position: absolute;
-    top: 85%;
+    top: 83.5%;
     margin-left: 11%;
+    animation: otocenka 10s infinite;
+}
+
+@keyframes otocenka {
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 #divko {
@@ -69,6 +86,12 @@ button {
 .nadpis {
     color: #be3144;
     text-shadow: 1.3px 1.3px #f0f0f0;
+    transition: 0.5s;
+}
+
+.nadpis:hover {
+    font-size: 30px;
+    color: #1583b6;
 }
 
 .nadpis-hlavny {
@@ -76,6 +99,12 @@ button {
     font-size: 48px;
     color: #be3144;
     text-shadow: 1.3px 1.3px #f0f0f0;
+    transition: 0.4s;
+}
+
+.nadpis-hlavny:hover {
+    font-size: 80px;
+    color: #1583b6;
 }
 
 .main {

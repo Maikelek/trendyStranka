@@ -78,30 +78,28 @@
                 </ul>
             </p>
         </div>
+        <script>
+            let vec1 = document.getElementById("vec1");
+            let vec2 = document.getElementById("vec2");
+            let vec3 = document.getElementById("vec3");
+            let menu = document.getElementById("menu")
 
-    </body>
-    <script>
-        let vec1 = document.getElementById("vec1");
-        let vec2 = document.getElementById("vec2");
-        let vec3 = document.getElementById("vec3");
-        let menu = document.getElementById("menu")
+            function vyskoc() {
+                if (vec1.style.visibility, vec2.style.visibility, vec3.style.visibility == "hidden") {
+                    vec1.style.visibility = "visible";
+                    vec2.style.visibility = "visible";
+                    vec3.style.visibility = "visible";
+                    menu.style.color = "#dd55b0";
+                    menu.style.textShadow = "2.5px 2.5px #000000"
 
-        function vyskoc() {
-            if (vec1.style.visibility, vec2.style.visibility, vec3.style.visibility == "hidden") {
-                vec1.style.visibility = "visible";
-                vec2.style.visibility = "visible";
-                vec3.style.visibility = "visible";
-                menu.style.color = "#F90606";
-                menu.style.textShadow = "2.5px 2.5px #000000"
-
-            } else {
-                vec1.style.visibility = "hidden";
-                vec2.style.visibility = "hidden";
-                vec3.style.visibility = "hidden";
-                menu.style.color = "#FFFFFF";
-                menu.style.textShadow = "0px 0px #000000"
+                } else {
+                    vec1.style.visibility = "hidden";
+                    vec2.style.visibility = "hidden";
+                    vec3.style.visibility = "hidden";
+                    menu.style.color = "#FFFFFF";
+                }
             }
-        }
-    </script>
+        </script>
+    </body>
 
 </html>
