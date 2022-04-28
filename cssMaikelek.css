@@ -112,6 +112,12 @@ button {
     font-size: 28px;
     padding: 0px 10px;
 }
+.odkaz a{
+    color: white;
+}
+.odkaz a:visited{
+    color: white;
+}
 
 @media screen and (max-height: 450px) {
     .sidenav {

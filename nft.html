@@ -22,8 +22,7 @@
             <a id="onas" href="team.html">O nás</a>
             <a style="cursor: pointer" onclick="vyskoc()" id="menu">Témy ≡</a>
             <a style="visibility: hidden" id="vec1" href="historia.html">- História</a>
-            <a style="visibility: hidden" id="vec2" href="sifrovanie.html">- Šifrovanie</a>
-            <a style="visibility: hidden" id="vec3" href="bitcoin.html">- Bitcoin</a>
+            <a style="visibility: hidden" id="vec2" href="bitcoin.html">- Bitcoin</a>
             <a href="https://www.spseke.sk/skola/" id="logo" target="_blank"><img src="images\logo_spse.png" alt="spsekelogo"></a>
 
         </div>
@@ -67,21 +66,18 @@
     <script>
         let vec1 = document.getElementById("vec1");
         let vec2 = document.getElementById("vec2");
-        let vec3 = document.getElementById("vec3");
         let menu = document.getElementById("menu")
 
         function vyskoc() {
-            if (vec1.style.visibility, vec2.style.visibility, vec3.style.visibility == "hidden") {
+            if (vec1.style.visibility, vec2.style.visibility == "hidden") {
                 vec1.style.visibility = "visible";
                 vec2.style.visibility = "visible";
-                vec3.style.visibility = "visible";
                 menu.style.color = "#dd55b0";
                 menu.style.textShadow = "2.5px 2.5px #000000"
 
             } else {
                 vec1.style.visibility = "hidden";
                 vec2.style.visibility = "hidden";
-                vec3.style.visibility = "hidden";
                 menu.style.color = "#FFFFFF";
             }
         }
