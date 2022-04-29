@@ -22,3 +22,5 @@
 #
 #
 #
+
+# Stranka HOTOVA 29.4 20:39

@@ -49,6 +49,13 @@ body {
     color: var(--main-white);
 }
 
+.dl {
+    width: 250px;
+    height: 250px;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
 h1,
 h2 {
     font-family: 'Raleway', sans-serif;
